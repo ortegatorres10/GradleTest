@@ -1,0 +1,13 @@
+plugins {
+	id 'ear'
+}
+
+dependencies{
+
+	deploy project(path: ':GradleWEB', configuration: 'archives')
+}
+
+ear{
+
+	archiveName = "GradleEAR.ear"
+}
